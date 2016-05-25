@@ -1,0 +1,2 @@
+create user user1 identified by user1 account unlock;
+grant connect, resource to user1;
