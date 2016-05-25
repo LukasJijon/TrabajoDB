@@ -25,73 +25,112 @@ public class Home extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         btnContarEstadoPropiedades = new javax.swing.JButton();
         CrudPropietario = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        brnCrudArriendo = new javax.swing.JButton();
+        btnPropiedad = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("DREAM HOME\n");
         setBackground(new java.awt.Color(0, 0, 153));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        btnContarEstadoPropiedades.setText("Contar Estado propiedad");
-        btnContarEstadoPropiedades.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnContarEstadoPropiedades.setText("Salario Total Por Oficina (Function)");
+        btnContarEstadoPropiedades.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnContarEstadoPropiedadesActionPerformed(evt);
             }
         });
 
         CrudPropietario.setText("CRUD Propietario");
-        CrudPropietario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        CrudPropietario.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 CrudPropietarioActionPerformed(evt);
             }
         });
 
         jButton3.setText("Salir");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jButton3ActionPerformed(evt);
             }
         });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foto/logo.png"))); // NOI18N
 
+        brnCrudArriendo.setText("CRUD Arriendo (Trigger)");
+        brnCrudArriendo.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                brnCrudArriendoActionPerformed(evt);
+            }
+        });
+
+        btnPropiedad.setText("CRUD Propiedad");
+        btnPropiedad.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnPropiedadActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("Información (Procedure)");
+        jButton1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(134, 134, 134)
-                        .addComponent(CrudPropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnContarEstadoPropiedades, javax.swing.GroupLayout.DEFAULT_SIZE, 189, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 115, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(113, 113, 113))
+                .addGap(75, 75, 75)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnContarEstadoPropiedades, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(brnCrudArriendo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(CrudPropietario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnPropiedad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addGap(19, 19, 19)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(btnPropiedad)
+                .addGap(18, 18, 18)
                 .addComponent(CrudPropietario)
+                .addGap(18, 18, 18)
+                .addComponent(brnCrudArriendo)
                 .addGap(18, 18, 18)
                 .addComponent(btnContarEstadoPropiedades)
                 .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addGap(18, 18, 18)
                 .addComponent(jButton3)
-                .addGap(62, 62, 62))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         pack();
@@ -99,14 +138,14 @@ public class Home extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void CrudPropietarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrudPropietarioActionPerformed
-        Propietario nuevopropietario = new Propietario();
+        CrudPropietario nuevopropietario = new CrudPropietario();
         nuevopropietario.setVisible(true);
         Home.this.dispose(); 
                 
     }//GEN-LAST:event_CrudPropietarioActionPerformed
 
     private void btnContarEstadoPropiedadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContarEstadoPropiedadesActionPerformed
-          Propiedad nuevapropiedad = new Propiedad();
+        FuntionSalario nuevapropiedad = new FuntionSalario();
         nuevapropiedad.setVisible(true);
         Home.this.dispose(); 
     }//GEN-LAST:event_btnContarEstadoPropiedadesActionPerformed
@@ -114,6 +153,25 @@ public class Home extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
        Home.this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void brnCrudArriendoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brnCrudArriendoActionPerformed
+        TriggerIngresaArriendo nuevoarriendo = new TriggerIngresaArriendo();
+        nuevoarriendo.setVisible(true);
+        Home.this.dispose();
+    }//GEN-LAST:event_brnCrudArriendoActionPerformed
+
+    private void btnPropiedadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPropiedadActionPerformed
+    CrudPropiedad nuevoCrudpropiedad = new CrudPropiedad();
+        nuevoCrudpropiedad.setVisible(true);
+        Home.this.dispose();         // TODO add your handling code here:
+    }//GEN-LAST:event_btnPropiedadActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
+    {//GEN-HEADEREND:event_jButton1ActionPerformed
+        ProcedureInfo nuevoproce = new ProcedureInfo();
+        nuevoproce.setVisible(true);
+        Home.this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -153,7 +211,10 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton CrudPropietario;
+    private javax.swing.JButton brnCrudArriendo;
     private javax.swing.JButton btnContarEstadoPropiedades;
+    private javax.swing.JButton btnPropiedad;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
